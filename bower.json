@@ -1,0 +1,24 @@
+{
+  "name": "strapp",
+  "description": "strapp test",
+  "main": "server.js",
+  "authors": [
+    "amasrie <abdalahmasrie@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "homepage": "https://github.com/amasrie/strapp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "0.4"
+  }
+}

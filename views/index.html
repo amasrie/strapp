@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+
+	<head>
+	  	<meta charset="utf-8">
+	  	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	  	<title>Evaluación Strapp</title>
+	  	<meta name="description" content="Evaluación de Strapp">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="author" content="Abdalah Masrie">
+
+		<!-- favicon -->
+	    <link id="favicon" rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Feedbin-Favicon-search.svg/2000px-Feedbin-Favicon-search.svg.png">
+
+	    <!-- Se agregan links a Bootstrap y Angular -->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!--
+
+  <link rel="stylesheet" href="styles/chat.css">
+
+
+-->
+	</head>
+
+	<body data-ng-app="app" id="app" data-custom-page data-ng-controller="AppCtrl">
+
+		<div>
+		    <div ui-view></div>
+		</div>
+
+
+<!--
+<body data-ng-app="app" id="app" class="app" data-custom-page data-ng-controller="AppCtrl" data-ng-class=" { 'layout-boxed': main.layout === 'boxed',
+                            'nav-collapsed-min': main.isMenuCollapsed
+          } ">
+
+
+
+  <script src="app/app.module.js"></script>
+  <script src="app/chart/chart.module.js"></script>
+  <script src="app/core/core.module.js"></script>
+  <script src="app/layout/layout.module.js"></script>
+  <script src="app/form/form.module.js"></script>
+  <script src="app/form/formValidation.module.js"></script>
+  <script src="app/page/page.module.js"></script>
+  <script src="app/session/session.module.js"></script>
+
+  <script src="app/medical/medical.module.js"></script>
+  <script src="app/content/content.module.js"></script>
+  <script src="app/chat/chat.module.js"></script>
+
+
+
+
+  <script src="app/ui/ui.module.js"></script>
+  <script src="app/table/table.module.js"></script>
+  <script src="app/core/app.config.js"></script>
+  <script src="app/core/app.controller.js"></script>
+  <script src="app/core/config.route.js"></script>
+  <script src="app/core/i18n.js"></script>
+  <script src="app/form/specialty.controller.js"></script>
+  <script src="app/dashboard/dashboard.controller.js"></script>
+  <script src="app/layout/layout.controller.js"></script>
+  <script src="app/layout/layout.diretive.js"></script>
+  <script src="app/layout/loader.js"></script>
+  <script src="app/layout/sidebar.directive.js"></script>
+  <script src="app/form/form.controller.js"></script>
+  <script src="app/form/form.directive.js"></script>
+  <script src="app/form/formValidation.controller.js"></script>
+  <script src="app/page/page.controller.js"></script>
+  <script src="app/page/help.controller.js"></script>
+  <script src="app/chat/chat.controller.js"></script>
+  <script src="app/medical/specialty.controller.js"></script>
+
+  <script src="app/page/page.directive.js"></script>
+  <script src="app/session/session.directive.js"></script>
+
+  <script src="app/session/session.controller.js"></script>
+  <script src="app/session/picture.controller.js"></script>
+  <script src="app/session/login.controller.js"></script>
+
+  <script src="app/session/signup.controller.js"></script>
+  <script src="app/page/forgot-password.controller.js"></script>
+  <script src="app/page/change.controller.js"></script>
+  <script src="app/dashboard/consultation_detail.controller.js"></script>
+
+  <script src="app/page/reset.controller.js"></script>
+
+  <script src="app/medical/medical.directive.js"></script>
+
+  <script src="app/session/session.controller.js"></script>
+  <script src="app/medical/medical.controller.js"></script>
+  <script src="app/content/content.controller.js"></script>
+
+  <script src="app/ui/material.controller.js"></script>
+  <script src="app/ui/ui.controller.js"></script>
+  <script src="app/ui/ui.directive.js"></script>
+  <script src="app/table/table.controller.js"></script>
+  <script src="app/table/report.controller.js"></script>
+  <script src="app/table/reschedule.controller.js"></script>
+  <script src="app/table/score.controller.js"></script>
+  <script src="app/table/add-guest.controller.js"></script>
+
+
+  <script src="app/form/specialist.controller.js"></script>
+  <script src="app/form/registration.controller.js"></script>
+  <script src="app/form/payment.controller.js"></script>
+  <script src="app/form/history.controller.js"></script>
+  <script src="app/form/uploadFile.controller.js"></script>
+  <script src="app/dashboard/diagnosis.controller.js"></script>
+  <script src="app/session/doctor_leave.controller.js"></script>
+  <script src="app/session/doctor_sanction.controller.js"></script>
+  <script src="app/session/doctor_admonishment.controller.js"></script>
+  <script src="app/session/doctor_absences.controller.js"></script>
+  <script src="app/session/calendar_availability.controller.js"></script>
+  <script src="app/session/doctors_list.controller.js"></script>
+  <script src="app/session/patients_list.controller.js"></script>
+  <script src="app/session/vademecum.js"></script>
+  <script src="app/form/wizardHeader.controller.js"></script>
+
+-->
+
+		<!-- Scripts para bootstrap, JQuery y Angular-->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+		<!-- bower components-->
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+		<!-- Scripts de archivos de Angular-->
+	  	<script src="app.config.js"></script>
+	  	<script src="app.controller.js"></script>
+	  	<script src="app.service.js"></script>
+
+	</body>
+
+</html>
