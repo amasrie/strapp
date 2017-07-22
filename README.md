@@ -11,4 +11,4 @@ Tras completarse la instalación, aplicar el siguiente comando desde la carpeta 
 
     npm start
 
-
+Al realizar esto, se debe abrir un navegador y visitar localhost:PORT, donde PORT es el puerto indicado por la consola donde el servidor se está ejecutando.

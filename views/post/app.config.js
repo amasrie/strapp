@@ -1,13 +1,10 @@
 (function () {
     'use strict';
 
-    angular.module('app', ['ui.router'])
+    angular.module('app', ['ui.router', 'ngAnimate', 'ngSanitize', 'ui.bootstrap'])
         .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-            var routes, setRoutes;
 
-            routes = [ 'list', 'details' ]
-
-            setRoutes = function(route) {
+            var setRoutes = function(route) {
                 var config, url;
                 url = '/' + route;
                 config = {
@@ -18,13 +15,11 @@
                 return $stateProvider;
             };
 
-            routes.forEach(function(route) {
-                return setRoutes(route);
-            });
+            setRoutes('post/list');
 
             $urlRouterProvider
-                .when('/', '/list')
-                .otherwise('/list');
+                .when('/', '/post/list')
+                .otherwise('/post/list');
         }]
     );
 

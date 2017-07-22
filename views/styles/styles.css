@@ -1,0 +1,17 @@
+.container-fluid{
+	margin-top: 10px;
+}
+
+.row{
+	margin-bottom: 10px;
+}
+
+/*Esto impide que el textarea se expanda de forma horizontal,
+ evitando que su posición se vea afectada por la columna */
+textarea{
+	resize: vertical;
+}
+
+form{
+	margin: 10px;
+}

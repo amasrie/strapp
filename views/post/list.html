@@ -1,0 +1,98 @@
+<div class="container-fluid" ng-controller="AppCtrl">
+
+	<div class="well well-lg">
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-6" align="center">
+				<div class="row">
+					<div class="col-xs-2">
+						<span>Id:</span>
+					</div>
+					<div class="col-xs-10">
+						<input type="text" class="form-control" id="id_text" ng-disabled="true" ng-model="post_id">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-2">
+						<span>Título:</span>
+					</div>
+					<div class="col-xs-10">
+						<input type="text" class="form-control" id="title_text" ng-disabled="true" ng-model="post_title">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-2">
+						<span>Body:</span>
+					</div>
+					<div class="col-xs-10">
+						<textarea class="form-control" id="body_text" ng-disabled="true" ng-model="post_body"></textarea>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-xs-12 col-sm-6" align="center">
+				<img ng-src="{{getImg()}}" class="img-responsive" ng-disabled="true">
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="well well-lg">
+
+	    <div class="row ui-section">
+	        <div class="col-md-12">
+	            <section class="panel panel-default table-dynamic">
+	                <div class="table-filters">
+                        <form>
+                            <input type="text" placeholder="Filtrar título" class="form-control" data-ng-model="searchKeywords" data-ng-keyup="search()">
+                        </form>
+	                </div>
+
+	                <table class="table table-bordered table-striped table-responsive">
+	                    <thead>
+	                        <tr>
+	                            <th>
+	                                <div class="th">
+	                                    Id
+	                                </div>
+	                            </th>
+	                            <th>
+	                                <div class="th">
+	                                    Título
+	                                </div>
+	                            </th>
+	                            <th>
+	                                <div class="th">
+	                                    Imagen
+	                                </div>
+	                            </th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        <tr data-ng-repeat="post in currentPageStores" ng-click="updateDetail(post)" ng-style="post.hover" ng-mouseenter="hoverEffect(post.id -1, true)" ng-mouseleave="hoverEffect(post.id -1, false)">
+	                            <td>{{post.id}}</td>
+	                            <td>{{post.title}}</td>
+	                            <td><img ng-src="{{post.image}}"></td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+
+	                <footer class="table-footer">
+	                    <div class="row">
+	                        <div class="col-xs-11 text-right pagination-container">
+
+							    <ul uib-pagination boundary-links="true" total-items="filteredStores.length" ng-model="currentPage" ng-change="select(currentPage)" class="pagination-margin" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></ul>
+
+	                        </div>
+	                    </div>
+	                </footer>
+	            </section>
+	        </div>
+    </div>
+
+
+	</div>
+</div>
